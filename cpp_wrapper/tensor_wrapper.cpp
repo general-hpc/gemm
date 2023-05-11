@@ -14,6 +14,9 @@ PYBIND11_MODULE(tensor, m) {
             })
             .def("__repr__",[](const tensor::Matrix &matrix) {
                 return static_cast<std::string>(matrix);
+            })
+            .def("__eq__", [](const tensor::Matrix &lhs, const tensor::Matrix &rhs) {
+                return lhs == rhs;
             });
 
     py::class_<tensor::Mul>(m, "Mul")
