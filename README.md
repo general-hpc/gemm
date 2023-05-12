@@ -2,7 +2,11 @@
 
 ## benchmark
 
-### [api](./python/benchmark/behchmark_api.py)
+### [api](./python/benchmark/benchmark_api.py)
+
+![](./assets/benchmark_api.png)
+
+- basic
 
 ```
            basic
@@ -21,6 +25,11 @@
 │       512 │       0.242 │
 │      1024 │        2.57 │
 └───────────┴─────────────┘
+```
+
+- order
+
+```
            order
 ┏━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃ scale (n) ┃ latency (s) ┃
@@ -37,6 +46,11 @@
 │       512 │      0.0749 │
 │      1024 │       0.571 │
 └───────────┴─────────────┘
+```
+
+- tile
+
+```
            tile
 ┏━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃ scale (n) ┃ latency (s) ┃
@@ -53,6 +67,11 @@
 │       512 │      0.0835 │
 │      1024 │       0.654 │
 └───────────┴─────────────┘
+```
+
+- parallel
+
+```
          parallel
 ┏━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃ scale (n) ┃ latency (s) ┃
