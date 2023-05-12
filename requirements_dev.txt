@@ -1,0 +1,3 @@
+rich
+matplotlib
+load_test @ git+https://github.com/gaoxinge/load_test@edf0d90
