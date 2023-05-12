@@ -1,3 +1,6 @@
 rich
 matplotlib
 load_test @ git+https://github.com/gaoxinge/load_test@edf0d90
+numpy
+tensorflow==2.12.0
+torch==1.9.0
